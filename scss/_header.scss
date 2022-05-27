@@ -1,0 +1,60 @@
+header{
+    width: 100%;
+    background-color: var(--ele-bg-color);
+    color: var(--txt-color);
+    box-shadow: 0px 2px 1px 0px var(--shadow-color);
+    height: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    height: 100%;
+    max-width: 1200px;
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--ele-bg-color);
+
+    align-items: center;
+    
+    .logo{
+        font-weight: 800;
+        font-size: 24px;
+        color: var(--txt-color);
+        @media screen and (max-width: 820px) {
+        font-size: 4vmin;
+            
+        }
+    }
+    
+    button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: var(--txt-color);
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        line-height: 24px;
+
+        svg{
+            path{
+                fill: var(--txt-color);
+            }
+            width: 24px;
+            margin-right: 3px;
+        }
+
+        @media screen and (max-width: 486px) {
+            font-size: 2.8vmax;
+
+            svg{
+                width: 3.8vmax;
+            }
+        }
+        
+    }
+}
