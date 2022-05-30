@@ -1,0 +1,127 @@
+.input {
+    &Block {
+        display: flex;
+        margin-block: 3.5rem;
+        justify-content: space-between;
+        align-items: center;
+        max-width: var(--max-width);
+        width: 85%;
+        @media screen and (max-width: 741px) {
+            display: flex;
+            flex-direction: column;
+            margin-block: 2.5rem;
+            align-items: flex-start;
+            row-gap: 1.3rem;
+        }
+    }
+    &Wrapper {
+        background-color: var(--ele-bg-color);
+        width: 50%;
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        @include shadow;
+
+        input {
+            font-size: 16px;
+            padding: 12px 0 12px 2px;
+            height: 100%;
+            color: var(--txt-color);
+            flex-grow: 1;
+            background-color: transparent;
+            &,
+            &:active,
+            &:hover {
+                border: none;
+                outline: none;
+            }
+
+            &::placeholder {
+                color: var(--search-bar);
+            }
+        }
+
+        svg {
+            width: 24px;
+            margin-inline: 14px;
+
+            path {
+                stroke: var(--search-bar);
+            }
+            @media screen and (max-width: 372px) {
+                margin-inline: 5px;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            width: 70%;
+        }
+        @media screen and (max-width: 587px) {
+            width: 100%;
+        }
+    }
+}
+
+.optionsList {
+    position: relative;
+    & > button {
+        background-color: var(--ele-bg-color);
+        border: none;
+        outline: none;
+        color: var(--txt-color);
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0.3rem;
+        @include shadow;
+        border-radius: 3px;
+
+        span {
+            margin-inline: 0.9rem 1.5rem;
+        }
+        svg {
+            width: 1.5rem;
+            margin-inline: 0 0.6rem;
+
+            path {
+                stroke: var(--txt-color);
+            }
+        }
+    }
+    ul {
+        width: 100%;
+        color: var(--txt-color);
+        background-color: var(--ele-bg-color);
+        margin-top: 2px;
+        @include shadow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 1000;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: 500ms ease;
+        will-change: clip-path;
+
+        &.opened {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        li {
+            list-style: none;
+            font-weight: 600;
+            width: 100%;
+
+            button {
+                padding: 1rem 0 1rem 0;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+}

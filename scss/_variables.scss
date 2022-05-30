@@ -1,20 +1,22 @@
-
-body[data-theme="light"]{
+body[data-theme="light"] {
     --bg-color: #fafafa;
     --ele-bg-color: #ffffff;
     --txt-color: #111517;
     --search-bar: #858585;
 }
 
-
-body[data-theme="dark"]{
+body[data-theme="dark"] {
     --bg-color: hsl(207, 26%, 17%);
     --ele-bg-color: rgb(43, 57, 69);
     --txt-color: #ffffff;
     --search-bar: #ffffff;
 }
 
-body{
+body {
     --shadow-color: #11151731;
+    --max-width: 1200px;
+}
 
+@mixin shadow {
+    box-shadow: 0px 3px 3px 0px var(--shadow-color);
 }
