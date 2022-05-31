@@ -1,0 +1,58 @@
+.content {
+    width: var(--width);
+    @include maxWidth;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.card {
+    --radius: 8px;
+    width: 240px;
+
+    cursor: pointer;
+    background-color: var(--ele-bg-color);
+    @include shadow;
+    border-radius: var(--radius);
+    &Image {
+        // height: 173px;
+
+        // background-image: url("https://flagcdn.com/w320/do.png");
+        background-size: contain;
+        border-top-left-radius: var(--radius);
+        border-top-right-radius: var(--radius);
+
+        img {
+            width: 100%;
+            border-top-left-radius: var(--radius);
+            border-top-right-radius: var(--radius);
+            // opacity: 0;
+        }
+    }
+
+    &Information {
+        --margin: 1.3rem;
+        padding-bottom: 1rem;
+        h2 {
+            font-size: 20px;
+            margin-block: var(--margin);
+            margin-inline: var(--margin);
+        }
+        p {
+            margin-left: var(--margin);
+            margin-block: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            span {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.loading {
+    font-size: 64px;
+    margin-top: 35px;
+    font-family: monospace;
+}

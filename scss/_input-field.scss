@@ -5,7 +5,7 @@
         justify-content: space-between;
         align-items: center;
         max-width: var(--max-width);
-        width: 85%;
+        width: var(--width);
         @media screen and (max-width: 741px) {
             display: flex;
             flex-direction: column;

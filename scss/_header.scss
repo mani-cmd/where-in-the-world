@@ -11,7 +11,7 @@ header {
 nav {
     height: 100%;
     max-width: var(--max-width);
-    width: 86%;
+    width: var(--width);
     display: flex;
     justify-content: space-between;
     background-color: var(--ele-bg-color);
