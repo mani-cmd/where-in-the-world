@@ -42,7 +42,7 @@ Users should be able to:
 <br/>
 <br/>
 
-<img style='max-width: 800px;' src='./images/ipad.png' alt='demo view' />
+<img  src='./images/ipad.png' alt='demo view' />
 <br/>
 <br/>
 
@@ -52,7 +52,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [Add solution URL here](https://github.com/mani-cmd/where-in-the-world)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [Add live site URL here](https://where-in-the-world-mani-cmd.vercel.app/)
 
 ## My process
 
