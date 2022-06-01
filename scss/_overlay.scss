@@ -1,0 +1,131 @@
+.overlay {
+    position: fixed;
+    width: 100%;
+    background-color: var(--bg-color);
+    outline: 2px solid;
+    top: 64px;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-bottom: 2px solid black;
+    z-index: 4;
+    visibility: hidden;
+    // clip-path: polygon(50% 0%, 63% 0, 53% 9%, 50% 21%, 56% 46%, 50% 100%, 46% 45%, 51% 22%, 47% 8%, 35% 0);
+    // clip-path: polygon(50% 0%, 100% 0, 78% 0, 50% 0, 50% 100%, 50% 100%, 50% 100%, 50% 0, 21% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    transition: 450ms ease, 500ms ease-out, 600ms ease-in;
+    will-change: visibility, transform, clip-path;
+    transform: translateY(-100%);
+    padding-bottom: 90px;
+
+    &Container {
+        max-width: var(--max-width);
+        width: var(--width);
+        display: flex;
+        flex-direction: column;
+
+        &Button {
+            margin-block: 3rem;
+            button {
+                font-size: 16px;
+                border-radius: 4px;
+                box-shadow: 0px 0px 10px #00000096;
+                outline: 1px solid #f0f8ff4f;
+                padding: 0.3em 2em;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                svg {
+                    margin-right: 0.4rem;
+                    width: 1.2em;
+                    path {
+                        stroke-opacity: 1;
+                        fill-opacity: 1;
+                        fill: var(--txt-color);
+                    }
+                }
+                span {
+                    margin-left: 0.4rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    &Info {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 30px;
+
+        @media screen and (max-width: 812px) {
+            display: grid;
+            grid-template-columns: 100%;
+        }
+
+        &Image {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            img {
+                width: 80%;
+            }
+        }
+        &Text {
+            h3 {
+                font-size: 32px;
+                margin-block: 2rem;
+            }
+            p {
+                font-weight: 600;
+                font-size: 18px;
+
+                & > span {
+                    font-weight: 300;
+                }
+            }
+
+            .information {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                row-gap: 0.6rem;
+
+                @media screen and (max-width: 1044px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .borderCountries {
+                display: flex;
+                margin-top: 3rem;
+                column-gap: 1rem;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .title {
+                    font-weight: 600;
+                }
+
+                .buttonLike {
+                    font-weight: 300;
+                    font-size: 16px;
+                    padding: 0.3rem 0.8rem;
+                    @include shadow;
+                    background-color: var(--ele-bg-color);
+                }
+            }
+        }
+    }
+}
+
+.overlay.open {
+    visibility: visible;
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    // clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 71%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+    transform: translateY(0);
+}

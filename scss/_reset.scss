@@ -26,6 +26,7 @@ svg {
 
 button {
     color: var(--txt-color);
+    background-color: var(--ele-bg-color);
 
     &,
     &:hover,
@@ -34,4 +35,8 @@ button {
         outline: none;
         border: none;
     }
+}
+
+main {
+    position: relative;
 }

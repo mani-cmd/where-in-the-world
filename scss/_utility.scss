@@ -1,4 +1,11 @@
-.center{
+.center {
     display: flex;
     justify-content: center;
+}
+
+hr {
+    background-color: transparent;
+    padding-block: 2.5rem;
+    border: none;
+    outline: none;
 }

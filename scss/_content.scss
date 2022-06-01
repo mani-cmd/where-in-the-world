@@ -31,6 +31,9 @@
         }
     }
 
+    & > * {
+        pointer-events: none;
+    }
     &Information {
         --margin: 1.3rem;
         padding-bottom: 1rem;

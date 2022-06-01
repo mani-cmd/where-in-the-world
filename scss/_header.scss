@@ -6,6 +6,8 @@ header {
     height: 64px;
     display: flex;
     justify-content: center;
+    position: fixed;
+    z-index: 20;
 }
 
 nav {
