@@ -5,3 +5,20 @@
 @import "./input-field";
 @import "./content";
 @import "./overlay";
+
+footer {
+    background-color: var(--ele-bg-color);
+    padding: 0.3rem;
+    position: fixed;
+    font-weight: 600;
+    bottom: 0;
+    width: 100%;
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+    a {
+        color: var(--txt-color);
+        font-weight: 800;
+    }
+}
