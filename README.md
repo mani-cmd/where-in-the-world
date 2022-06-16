@@ -51,8 +51,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/mani-cmd/where-in-the-world)
--   Live Site URL: [Add live site URL here](https://where-in-the-world-mani-cmd.vercel.app/)
+-   Solution URL: [github](https://github.com/mani-cmd/where-in-the-world)
+-   Live Site URL: [vercel](https://where-in-the-world-mani-cmd.vercel.app/)
 
 ## My process
 
@@ -65,21 +65,13 @@ Users should be able to:
 -   [Sass](https://sass-lang.com/) - CSS preprocessor
 -   [Axios](https://axios-http.com/docs/intro) - For fetching API's
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 I have learned a lot by building this project. Some of them were new to me. The most intresting peice of code I learned is [Object.values()](https://devdocs.io/javascript/global_objects/object/values) property in javascript. Axios made it very easy for me to fetch API requests. In this project I created theme toggle to dark mode and stored the prefered theme in local storage so when they visit again it stay's the same them. I am really proud of this project because I built it on my own without following any tutorial on youtube.(with documentation's help)
 
-### Useful resources
-
--   [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
--   [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
 -   Website - [Manikandan](https://mani-cmd.github.io)
 -   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/mani-cmd)
--   Twitter - [@yourusername](https://www.twitter.com/copyninja_03)
+-   Twitter - [@copyninja_03](https://www.twitter.com/copyninja_03)
