@@ -70,6 +70,7 @@
             align-items: center;
             img {
                 width: 80%;
+                box-shadow: 0px 0px 18px #0000006b;
             }
         }
         &Text {
@@ -115,6 +116,7 @@
                     padding: 0.3rem 0.8rem;
                     @include shadow;
                     background-color: var(--ele-bg-color);
+                    margin-top: 0.5rem;
                 }
             }
         }
