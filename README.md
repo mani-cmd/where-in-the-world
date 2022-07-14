@@ -73,5 +73,5 @@ I have learned a lot by building this project. Some of them were new to me. The 
 ## Author
 
 -   Website - [Manikandan](https://mani-cmd.github.io)
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/mani-cmd)
+-   Frontend Mentor - [@mani-cmd](https://www.frontendmentor.io/profile/mani-cmd)
 -   Twitter - [@copyninja_03](https://www.twitter.com/copyninja_03)
